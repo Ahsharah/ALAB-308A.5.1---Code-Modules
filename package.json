@@ -1,0 +1,13 @@
+{
+    "name": "utils-project",
+    "version": "1.0.0",
+    "description": "",
+    "main": "utils.js",
+    "type": "module",
+    "scripts": {
+      "start": "node utils.js"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC"
+  }
