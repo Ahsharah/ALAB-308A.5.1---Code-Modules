@@ -21,3 +21,10 @@ export function longerString(strings) {
 export function stringLongerThan(strings, length) {
     return strings.filter(str => str.length > length);
 }
+
+export function printNumbers(n, current = 1) {
+    if(current > n) return;
+    console.log(current);
+    printNumbers(n,current + 1):
+
+}
