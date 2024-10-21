@@ -18,3 +18,15 @@ export function sortByAge(arr) {
 export function filterAgeAbove50(arr) {
     return arr.filter((item) => parseInt(item.age) <= 50);
 }
+/**
+ * Transforms data by changing "occupation" to "job" and incrementing age
+ * @param {Object[]} arr - Array of objects to transform
+ * @returns {Object[]} Transformed array
+ */
+export function transformData(arr) {
+    return arr.map((item) => ({
+        ...item,
+        job: item.occupation,
+        age: (parseInt(item.age) + 1).toString()
+    }));
+}
