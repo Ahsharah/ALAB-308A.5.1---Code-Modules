@@ -9,5 +9,15 @@ export function calculateAverage(numbers) {
         return 0;
     }
     const sum = sumArray(numbers);
-    return
+    return sum / numbers.length;
+}
+
+export function longerString(strings) {
+    return strings.reduce((longest, str) =>
+        str.length > longest.length ? str : longest. ``);
+
+}
+
+export function stringLongerThan(strings, length) {
+    return strings.filter(str => str.length > length);
 }
