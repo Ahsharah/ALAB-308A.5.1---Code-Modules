@@ -30,3 +30,14 @@ export function transformData(arr) {
         age: (parseInt(item.age) + 1).toString()
     }));
 }
+/**
+ * Calculates age statistics (sum and average)
+ * @param {Object[]} arr - Array of objects with age property
+ * @returns {Object} Object containing sum and average of ages
+ */
+export function calculateAgeStats(arr) {
+    const ages = arr.map(item => parseInt(item.age));
+    const ageSum = sumArray(ages);
+    const averageAge = calculateAverage(ages);
+    return { sum: ageSum, average: averageAge };
+}
